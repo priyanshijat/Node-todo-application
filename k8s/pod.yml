@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: Pod
+
 metadata:
-  name: node-pod
-  namespace: node-app
+  name: java-pod
+  namespace: node-ns
 
 spec:
   containers:
-    - name: node-container
-      image: trainwithshubham/node-app-batch-6
-      ports:
-        - containerPort: 8000
+  - name: node-pod
+    image: priyanshijat6701/node-image
+    ports:
+    - containerPort: 8000
+
